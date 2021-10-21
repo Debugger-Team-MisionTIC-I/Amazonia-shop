@@ -1,0 +1,22 @@
+{
+  "semi": false,
+  "overrides": [
+    {
+      "files": ["*.js", "*.jsx", "*.ts", "*.tsx"],
+      "options": {
+        "semi": true,
+        "trailingComma": "none",
+        "tabWidth": 4,
+        "singleQuote": false,
+        "jsxSingleQuote": false,
+        "printWidth": 100
+      }
+    },
+    {
+      "files": "*.json",
+      "options": {
+        "tabWidth": 2
+      }
+    }
+  ]
+}

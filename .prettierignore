@@ -1,0 +1,18 @@
+# Put here path/files to ignore with prettier
+node_modules/**/*
+.expo/*
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+build/
+
+# macOS
+.DS_Store
+
+# Editors
+.vscode/*
