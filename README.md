@@ -1,3 +1,3 @@
 # Amazonia-shop
 
-Proyecto de la Misión TIC 2022
+Proyecto de la Misión TIC
