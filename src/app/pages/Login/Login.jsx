@@ -1,5 +1,6 @@
 import React from "react";
-import { Input, Button } from "antd";
+import { Input, Button} from "antd";
+import { UserOutlined, EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
 
 // Styles
 import "./login.css";
@@ -12,12 +13,13 @@ const Login = () => {
 
                 <div className="input-login">
                     <p>Correo de usuario:</p>
-                    <Input placeholder="Correo" />
+                    <Input placeholder="Correo" prefix={<UserOutlined />} />
                 </div>
 
                 <div className="input-login2">
                     <p>Contraseña de usuario:</p>
-                    <Input.Password placeholder="contraseña" />
+                    <Input.Password placeholder="Contraseña" 
+                    iconRender={visible => (visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />)} />
                 </div>
 
                 <div className="input-login3">

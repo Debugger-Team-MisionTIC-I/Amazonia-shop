@@ -1,49 +1,48 @@
 import React from "react";
-import { Input, Button, Select } from "antd";
+import { Input, Button} from "antd";
 
 // Styles
 import "./newProduct.css";
 
-const { Option } = Select;
 
 const NewProduct = () => {
     return (
         <div className="mainContainer">
             <div>
                 <p className="title">
-                    <b>Nuevo producto</b>
+                    <b>Agregar servicio</b>
                 </p>
 
                 <div>
-                    <p>Nombre del producto:</p>
+                    <p>Nombre Completo:</p>
                     <Input placeholder="Nombre" />
                 </div>
 
                 <div className="productInput">
-                    <p>Precio del producto:</p>
+                    <p>Servicio:</p>
+                    <Input placeholder="Servicio" />
+                </div>
+
+                <div className="productInput">
+                    <p>Correo Electronico:</p>
                     <Input placeholder="Precio" />
                 </div>
 
                 <div className="productInput">
-                    <p>Descripción del producto:</p>
+                    <p>Tarifa por hora:</p>
                     <Input placeholder="Precio" />
                 </div>
 
-                <div className="productInput">
-                    <p>Cantidad:</p>
-                    <Input placeholder="Precio" />
-                </div>
-
-                <div className="productInput">
+                {/* <div className="productInput">
                     <p>Disponibilidad</p>
                     <Select placeholder="¿Esta disponible?">
                         <Option value="si">Sí</Option>
                         <Option value="no">No</Option>
                     </Select>
-                </div>
+                </div> */}
 
-                <div className="productInput">
-                    <Button type="primary">Añadir a la tienda</Button>
+                <div className="productInput1">
+                    <Button type="primary">Añadir servicio</Button>
                 </div>
             </div>
         </div>

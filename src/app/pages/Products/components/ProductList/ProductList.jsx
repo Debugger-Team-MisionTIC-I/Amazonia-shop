@@ -11,7 +11,7 @@ const ProductList = () => {
     return (
         <div className="tableMainContainer">
             <p className="titleTable">
-                <b>Productos en stock</b>
+                <b>Servicios disponibles</b>
             </p>
 
             <DataTable
@@ -39,5 +39,6 @@ const ProductList = () => {
         </div>
     );
 };
+
 
 export default ProductList;
