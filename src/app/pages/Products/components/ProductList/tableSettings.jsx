@@ -1,59 +1,68 @@
+
 export const columns = [
+    {
+        name: "ID",
+        selector: (row) => row.id,
+        sortable: true
+    },
     {
         name: "Nombre",
         selector: (row) => row.nombre,
         sortable: true
     },
     {
-        name: "Precio",
-        selector: (row) => row.precio,
+        name: "Servicio",
+        selector: (row) => row.servicio,
         sortable: true
     },
     {
-        name: "Descripcion",
-        selector: (row) => row.descripcion,
+        name: "Correo",
+        selector: (row) => row.correo,
         sortable: true
     },
     {
-        name: "Cantidad",
-        selector: (row) => row.cantidad,
-        sortable: true
-    },
-    {
-        name: "Estado",
-        selector: (row) => row.disponible,
+        name: "Tarifa",
+        selector: (row) => row.tarifa,
         sortable: true
     }
 ];
 
+var N = 200;
+
 export const tableData = [
     {
-        nombre: "Camisa",
-        precio: 120,
-        descripcion: "Des...",
-        cantidad: 24,
-        disponible: "No"
+        id: N=N+1,
+        nombre: "Pedro",
+        servicio: "Jardinero",
+        correo: "pedrofake@gmail.com",
+        tarifa: "100.000",
     },
     {
-        nombre: "Corbata",
-        precio: 20,
-        descripcion: "Des...",
-        cantidad: 45,
-        disponible: "No"
+        id: N=N+1,
+        nombre: "Juan",
+        servicio: "Mecanico",
+        correo: "juanfake@gmail.com",
+        tarifa: "200.000",
     },
     {
-        nombre: "Zapatos",
-        precio: 460,
-        descripcion: "Des...",
-        cantidad: 1,
-        disponible: "Si"
+        id: N=N+1,
+        nombre: "Luis",
+        servicio: "Camarografo",
+        correo: "luisfake@gmail.com",
+        tarifa: "300.000"
     },
-    { nombre: "Gafas", precio: 753, descripcion: "Des...", cantidad: 12, disponible: "No" },
+    { 
+        id: N=N+1,
+        nombre: "Carlos",
+        servicio: "Tutor",
+        correo: "carlosfake@gmail.com",
+        tarifa: "200.000"
+    },
     {
-        nombre: "Pantalon",
-        precio: 830,
-        descripcion: "Des...",
-        cantidad: 2,
-        disponible: "Si"
+        id: N=N+1,
+        nombre: "Marco",
+        servicio: "Entrenador",
+        correo: "marcofake@gmail.com",
+        tarifa: "350.000"
     }
 ];

@@ -1,10 +1,9 @@
 import React from "react";
-import { Input, Button, Select, Space, DatePicker } from "antd";
+import { Input, Button, DatePicker } from "antd";
 
 // Styles
 import "./newVenta.css";
 
-const { Option } = Select;
 
 const NewVenta = () => {
     return (
@@ -39,46 +38,31 @@ const NewVenta = () => {
                     <Input placeholder="Precio" />
                 </div>
 
-                {/* <Select placeholder="¿Esta disponible?">
-                        <Option value="si">Sí</Option>
-                        <Option value="no">No</Option>
-                    </Select> */}
-
-                {/* Revisar */}
                 <div className="productInput">
                     <p>Fecha de venta:</p>
                     {/* <Space direction="vertical" size={12}>
                         <DatePicker defaultValue={moment('2015/01/01', dateFormat)} format={dateFormat} />
                     </Space>, document.getElementById('container'), */}
-                    <Input placeholder="Fecha YYYY/MM/DD" />
+                    <DatePicker />
                 </div>
 
                 <div className="productInput">
                     <p>Documento de identidad:</p>
-                    {/* <Space direction="vertical" size={12}>
-                        <DatePicker defaultValue={moment('2015/01/01', dateFormat)} format={dateFormat} />
-                    </Space>, document.getElementById('container'), */}
                     <Input placeholder="Documento de identidad" />
                 </div>
 
                 <div className="productInput">
                     <p>Cliente:</p>
-                    {/* <Space direction="vertical" size={12}>
-                        <DatePicker defaultValue={moment('2015/01/01', dateFormat)} format={dateFormat} />
-                    </Space>, document.getElementById('container'), */}
                     <Input placeholder="Cliente" />
                 </div>
 
                 <div className="productInput">
                     <p>Vendedor:</p>
-                    {/* <Space direction="vertical" size={12}>
-                        <DatePicker defaultValue={moment('2015/01/01', dateFormat)} format={dateFormat} />
-                    </Space>, document.getElementById('container'), */}
                     <Input placeholder="Vendedor" />
                 </div>
 
 
-                <div className="productInput">
+                <div className="productInput1">
                     <Button type="primary">Añadir venta</Button>
                 </div>
             </div>
