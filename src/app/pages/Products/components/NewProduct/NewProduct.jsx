@@ -33,14 +33,6 @@ const NewProduct = () => {
                     <Input placeholder="Precio" />
                 </div>
 
-                {/* <div className="productInput">
-                    <p>Disponibilidad</p>
-                    <Select placeholder="¿Esta disponible?">
-                        <Option value="si">Sí</Option>
-                        <Option value="no">No</Option>
-                    </Select>
-                </div> */}
-
                 <div className="productInput1">
                     <Button type="primary">Añadir servicio</Button>
                 </div>

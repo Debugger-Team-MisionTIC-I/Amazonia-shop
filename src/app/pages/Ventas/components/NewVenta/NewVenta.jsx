@@ -10,7 +10,7 @@ const NewVenta = () => {
         <div className="mainContainer">
             <div>
                 <p className="title">
-                    <b>Nueva venta</b>
+                    <b>Solicitar servicio</b>
                 </p>
 
                 <div>
