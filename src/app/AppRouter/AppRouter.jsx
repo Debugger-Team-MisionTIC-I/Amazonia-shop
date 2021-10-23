@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Login from "../pages/Login/Login";
 import Products from "../pages/Products/Products";
 import Ventas from "../pages/Ventas/Ventas";
+import Usuario from "../pages/Usuario/Usuario";
 
 const AppRouter = () => {
     return (
@@ -30,6 +31,13 @@ const AppRouter = () => {
                 path="/ventas"
                 render={() => {
                     return <Ventas />;
+                }}
+            ></Route>
+            <Route
+                exact
+                path="/usuario"
+                render={() => {
+                    return <Usuario />;
                 }}
             ></Route>
 
