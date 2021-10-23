@@ -7,6 +7,14 @@ import "./listusuarios.css";
 // Table settings
 import { columns, tableData } from "./table";
 
+const SpanishTable = {
+    rowsPerPageText: 'Filas por pagina',
+    rangeSeparatorText: 'de',
+    selectAllRowsItem: true,
+    selectAllRowsItemText: 'Todos'
+}
+
+
 const ListUsuarios = () => {
     return (
         <div className="tableMainContainer">
@@ -34,6 +42,7 @@ const ListUsuarios = () => {
                 paginationServer
                 // paginationTotalRows={paginationTotalRows}
                 paginationRowsPerPageOptions={[10]}
+                paginationComponentOptions={SpanishTable}
                 // onChangePage={(page) => onChangePage(page)}
             />
         </div>

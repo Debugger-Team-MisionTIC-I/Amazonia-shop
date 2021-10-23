@@ -5,7 +5,7 @@ export const columns = [
         sortable: true
     },
     {
-        name: "Id",
+        name: "ID",
         selector: (row) => row.Id,
         sortable: true
     },

@@ -7,7 +7,7 @@ const { Option } = Select;
 
 const Disponibilidad = () => {
     return (
-            <Select className="disPon" placeholder="Disponibiidad">
+            <Select placeholder="Disponibiidad">
                 <Option value="Process">En proceso</Option>
                 <Option value="Cancel">Cancelada</Option>
                 <Option value="Clear">Realizada</Option>
@@ -15,6 +15,8 @@ const Disponibilidad = () => {
         
     );
 };
+
+
 
 export const columns = [
     {

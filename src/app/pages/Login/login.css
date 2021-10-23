@@ -31,8 +31,13 @@
   width: 70%;
 }
 
+.Check {
+  margin-top: 1rem;
+  text-align: left;
+}
+
 .input-login3 {
-  margin-top: 4rem;
+  margin-top: 2rem;
   text-align: center;
   width: 70%;
 }

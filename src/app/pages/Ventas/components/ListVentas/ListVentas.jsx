@@ -10,7 +10,6 @@ const SpanishTable = {
     rangeSeparatorText: 'de',
     selectAllRowsItem: true,
     selectAllRowsItemText: 'Todos'
-    
 }
 
 const ListVentas = () => {

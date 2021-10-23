@@ -1,5 +1,5 @@
 import React from "react";
-import { Input, Button} from "antd";
+import { Input, Button, Checkbox} from "antd";
 import { UserOutlined, EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
 
 // Styles
@@ -20,6 +20,10 @@ const Login = () => {
                     <p>Contraseña de usuario:</p>
                     <Input.Password placeholder="Contraseña" 
                     iconRender={visible => (visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />)} />
+                </div>
+
+                <div className="Check">
+                    <Checkbox>Recuerdame</Checkbox>
                 </div>
 
                 <div className="input-login3">
