@@ -1,4 +1,13 @@
+const express=require('express');
+const path=require('path');
+const morgan=require('morgan');
+
+
+const app=express();
+
+
 import React from "react";
+
 import ReactDOM from "react-dom";
 
 import App from "./App";
@@ -14,6 +23,31 @@ ReactDOM.render(
     </React.StrictMode>,
     document.getElementById("root")
 );
+
+//settings
+app.set('port',process.env.PORT || 3000);
+
+
+//middleware
+app.use(morgan('dev'));
+app.use(express.json());
+
+
+//routes
+app.user(require('./routes/task.router'));
+
+
+//static files
+app.use(express.static(path.join(__dirname,'public')));
+
+
+
+//starting the server
+app.listen(app.get('port'),()=>{
+    console.log('server on port',app.get('port'));
+});
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
