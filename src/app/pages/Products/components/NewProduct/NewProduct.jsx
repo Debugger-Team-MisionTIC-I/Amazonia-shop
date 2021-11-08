@@ -5,7 +5,7 @@ import { Input, Button} from "antd";
 import "./newProduct.css";
 
 
-const NewProduct = () => {
+class NewProduct extends Prueba {
     return (
         <div className="mainContainer">
             <div>

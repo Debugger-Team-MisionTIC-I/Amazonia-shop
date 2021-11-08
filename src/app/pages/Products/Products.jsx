@@ -4,6 +4,7 @@ import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import NewProduct from "./components/NewProduct/NewProduct";
 import ProductList from "./components/ProductList/ProductList";
+import Prueba from "./components/ProductList/Prueba";
 import Footer from "./components/Footer/Footer";
 
 // Styles
@@ -21,8 +22,12 @@ const Products = () => {
                     <NewProduct />
                 </div>
 
-                <div className="productList">
-                    <ProductList />
+                {/* <div className="productList">
+                    <Prueba />
+                </div> */}
+
+                <div className="">
+                    <Prueba />
                 </div>
             </div>
 

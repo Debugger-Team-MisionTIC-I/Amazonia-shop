@@ -34,6 +34,13 @@
   background: #ffffff;
 }
 
+.prueba{
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  background: #ffffff;
+}
+
 .footer {
   height: 70px;
   background-image: url("/src/app/images/negro.jpg");
