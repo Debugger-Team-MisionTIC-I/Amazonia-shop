@@ -1,7 +1,7 @@
 const{ response, request } = require('express');
 
 
-const usuariosGet = (req, res) => {
+const usuariosGet = (req = request, res = response) => {
 
 
     res.json({
@@ -9,7 +9,7 @@ const usuariosGet = (req, res) => {
     })
    
 };
-const usuariosDelete = (req, res) => {
+const usuariosDelete = (req=request , res= response) => {
 
     res.json({
       msg: 'delete usuarios'
@@ -29,7 +29,7 @@ const usuariosPut = (req, res) => {
     })        
  };
 
-
+// Get Post Put Delete  CRUD
 
 module.exports={
     usuariosGet,
