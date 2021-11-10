@@ -1,6 +1,7 @@
 import React from "react";
 import { Input, Button, Checkbox} from "antd";
 import { UserOutlined, EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
+import { Login } from "./app/pages/Login";
 
 // Styles
 import "./login.css";
@@ -28,6 +29,7 @@ const Login = () => {
 
                 <div className="input-login3">
                     <Button type="primary">Iniciar sesion</Button>
+                    <Login />
                 </div>
 
                 <p className="crear-cuenta">
