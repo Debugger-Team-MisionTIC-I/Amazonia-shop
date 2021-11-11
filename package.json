@@ -4,6 +4,7 @@
     "description": "tienda virtual de servicios",
     "main": "index.jsx",
     "private": true,
+    "type" :"module",
     "dependencies": {
         "@ant-design/icons": "^4.7.0",
         "@testing-library/jest-dom": "^5.11.4",
@@ -27,8 +28,10 @@
         "web-vitals": "^1.0.1"
     },
     "scripts": {
-        "start": "node src/index.jsx",
-        "dev": "nodemon src/index.jsx",
+        "predeploy": "npm run build",
+        "deploy": "gh -pages -d build",
+        "start": "react-scripts start",
+        "dev": "nodemon src/index.js",
         "build": "react-scripts build",
         "test": "echo \"Error: no test specified\" && exit 1",
         "eject": "react-scripts eject"
