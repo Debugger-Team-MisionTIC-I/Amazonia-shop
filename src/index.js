@@ -3,7 +3,7 @@ import React from 'react';
 
 import ReactDOM from "react-dom";
 
-import App from "./App";
+import App from './App';
 import reportWebVitals from "./misc/reportWebVitals";
 
 // Styles
@@ -21,22 +21,22 @@ ReactDOM.render(
 
 
 //middleware
-app.use(morgan('dev'));
-app.use(express.json());
+App.use(morgan('dev'));
+App.use(express.json());
 
 
 //routes
-app.user(require('./routes/task.router'));
+App.user(require('./routes/task.router'));
 
 
 //static files
-app.use(express.static(path.join(__dirname,'public')));
+App.use(express.static(path.join(__dirname,'public')));
 
 
 
 //starting the server
-app.listen(app.get('port'),()=>{
-    console.log('server on port',app.get('port'));
+App.listen(App.get('port'),()=>{
+    console.log('server on port',App.get('port'));
 });
 
 
